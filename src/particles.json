@@ -1,0 +1,89 @@
+{
+  "background": {
+    "color": {
+      "value": "#fff"
+    }
+  },
+  "fullScreen":{
+    "IFullScreen":false,
+    "zIndex":-1
+  },
+  "fpsLimit": 60,
+  "interactivity": {
+    "events": {
+      "onClick":{
+        "enable":true,
+        "mode":"push"
+      },
+      "onHover": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "resize": true
+    },
+    "modes": {
+      "bubble": {
+        "distance": 200,
+        "duration": 4,
+        "opacity": 0.8,
+        "size": 20
+      },
+      "push": {
+        "quantity": 2
+      },
+      "remove":{
+         "quantity":1
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.8
+      },
+      "trail":{
+        "delay":0.5,
+        "quantity":1,
+        "pauseOnStop":true
+      }
+    }
+  },
+  "particles": {
+    "color": {
+      "value": "#333"
+    },
+    "links": {
+      "color": "#333",
+      "distance": 150,
+      "enable": true,
+      "opacity": 0.3,
+      "width": 1
+    },
+    "collisions": {
+      "enable": true
+    },
+    "move": {
+      "direction": "none",
+      "enable": true,
+      "outMode": "bounce",
+      "random": false,
+      "speed": 2,
+      "straight": false
+    },
+    "number": {
+      "density": {
+        "enable": true,
+        "value_area": 700
+      },
+      "value": 70
+    },
+    "opacity": {
+      "value": 0.3
+    },
+    "shape": {
+      "type": "circle"
+    },
+    "size": {
+      "random": true,
+      "value": 3
+    }
+  },
+  "detectRetina": true
+}
