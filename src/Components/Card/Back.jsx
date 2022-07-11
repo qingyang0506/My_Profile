@@ -4,6 +4,7 @@ import React from 'react'
 
 export default function Back(props) {
     const { pass: { photo: { photo }, photoName: { photoName } } } = props
+
     return (
         <Card sx={{
             width: { xs: '78vw', sm: '32vw' },
@@ -15,7 +16,8 @@ export default function Back(props) {
         }}>
             <CardMedia
                 component="img"
-                height="230px"
+                height="240vh"
+                mb="10px"
                 image={photoName === 'photo1' ? photo.photo1 :
                     photoName === 'photo2' ? photo.photo2 :
                         photoName === 'photo3' ? photo.photo3 :
@@ -24,7 +26,7 @@ export default function Back(props) {
             <Button component="span" variant='contained' sx={{
                 bgcolor: 'primary.main',
                 textDecoration: 'underline',
-                marginBottom: '15px'
+                marginBottom:'10px'
             }}>
                 See Detail
             </Button>

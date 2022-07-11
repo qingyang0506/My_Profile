@@ -5,7 +5,7 @@ import { GitHub } from '@mui/icons-material'
 export default function Front(props) {
 
     const { pass: { title, content,url:{url}} } = props;
-    console.log(url)
+
     return (
         <Card sx={{
             width: { xs: '78vw', sm: '32vw' },

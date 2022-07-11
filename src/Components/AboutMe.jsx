@@ -41,6 +41,7 @@ export default function AboutMe() {
             <Avatar src={photo} sx={{
               width: '250px',
               height: '250px',
+              marginBottom:"30px"
             }} />
 
             <Typography variant={'h6'} sx={{

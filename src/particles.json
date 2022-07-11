@@ -36,7 +36,7 @@
       },
       "repulse": {
         "distance": 200,
-        "duration": 0.8
+        "duration": 0.5
       },
       "trail":{
         "delay":0.5,
@@ -64,7 +64,7 @@
       "enable": true,
       "outMode": "bounce",
       "random": false,
-      "speed": 2,
+      "speed": 2.5,
       "straight": false
     },
     "number": {

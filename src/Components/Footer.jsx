@@ -8,10 +8,10 @@ export default function Footer() {
   return (
     <Box
       sx={{
+        display:{xs:'none',sm:'flex'},
         width: '100%',
         height: '10vh',
         bgcolor: '#eee',
-        display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center'
       }}

@@ -2,9 +2,9 @@ import { Box, Typography } from '@mui/material'
 import React from 'react'
 import Card from './Card/Card'
 import photo1 from "../img/kemu.png"
-import photo2 from "../img/Mui.png"
+import photo2 from "../img/funnyquiz.png"
 import photo3 from "../img/profile.png"
-import photo4 from '../img/Carbon.png'
+import photo4 from '../img/tankBattle.png'
 
 export default function Project() {
   return (
@@ -55,11 +55,13 @@ export default function Project() {
         }} />
 
         <Card path={{
-          title: 'MUI-Design',
+          title: 'Funny Quiz',
           content: `
-             Use the one of the most popular font-end UI framework material UI with the react to design a
-             beautiful and good-looking webpages`,
-          url: ["https://github.com/qingyang0506/MUI-design","https://qingyang0506.github.io/MUI-design/"],
+             Use typescript write a very simple webpage you can do the quizzes on. 
+             You can choose the category,the amount and the difficulty of the questions 
+             by yourself. 
+             `,
+          url: ["https://github.com/qingyang0506/Funny-Quiz","https://qingyang0506.github.io/Funny-Quiz/"],
           photo: { photo2 },
           photoName: 'photo2'
         }} />
@@ -69,17 +71,18 @@ export default function Project() {
           content: `
             My personal profile web page.Developed with reactJS and material Ui,hosted by Github
            `,
-          url: "",
+          url: ["https://github.com/qingyang0506/My_Profile","https://qingyang0506.github.io/My_Profile/"],
           photo: { photo3 },
           photoName: 'photo3'
         }} />
 
         <Card path={{
-          title: 'Carbon footprint',
+          title: 'Tank Battle',
           content: `
-            A simple webpage for carbon footprint calculator,writen by html,css and Js
+            Using C# and winform develop a tradition and simple game 'battle city'.This game only 
+            run on window system and microsoft visual studio software.
             `,
-          url: "",
+          url: ["https://github.com/qingyang0506/TankBattle","https://github.com/qingyang0506/TankBattle"],
           photo: { photo4 },
           photoName: "photo4"
         }} />
