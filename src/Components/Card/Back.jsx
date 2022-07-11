@@ -16,7 +16,7 @@ export default function Back(props) {
         }}>
             <CardMedia
                 component="img"
-                height="240vh"
+                height="75%"
                 mb="10px"
                 image={photoName === 'photo1' ? photo.photo1 :
                     photoName === 'photo2' ? photo.photo2 :
