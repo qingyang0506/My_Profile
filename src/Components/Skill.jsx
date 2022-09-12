@@ -13,7 +13,7 @@ export default function Skill() {
     height: '14%',
     padding: '8px',
     gap: '2px',
-    backgroundColor: theme.palette.primary.light,
+    backgroundColor: theme.palette.primary.dark,
     fontSize: '60px',
     display: 'flex',
     flexDirection: 'column',
@@ -24,7 +24,7 @@ export default function Skill() {
     boxShadow: '0px 0px 5px rgba(0,0,0,0.3)',
     '&:hover': {
       backgroundColor: '#eee',
-      color: theme.palette.primary.light,
+      color: theme.palette.primary.dark,
       transform: 'translateY(-8px)'
     }
   }))
@@ -78,7 +78,7 @@ export default function Skill() {
             }} />
           <Fade top>
             <Box>
-              <Typography variant='h2' fontSize={'58px'} fontWeight={800} color={'primary.light'} textAlign="center">
+              <Typography variant='h2' fontSize={'58px'} fontWeight={800} color={'primary.dark'} textAlign="center">
                 Skills
               </Typography>
               <Typography variant='h6' textAlign={'center'}>
@@ -142,6 +142,21 @@ export default function Skill() {
             </MyBox>
 
             <MyBox>
+              <SiReact />
+              <Typography variant='h5'>React</Typography>
+            </MyBox>
+
+            <MyBox>
+              <SiTypescript />
+              <Typography variant='h5'>TS</Typography>
+            </MyBox>
+
+            <MyBox>
+              <SiCsharp />
+              <Typography variant='h5'>C#</Typography>
+            </MyBox>
+
+            <MyBox>
               <TbBrandJavascript />
               <Typography variant='h5'>JS</Typography>
             </MyBox>
@@ -156,30 +171,21 @@ export default function Skill() {
               <Typography variant='h5'>CSS</Typography>
             </MyBox>
 
-            <MyBox>
-              <SiReact />
-              <Typography variant='h5'>React</Typography>
-            </MyBox>
+          
 
             <MyBox>
               <SiC />
               <Typography variant='h5'>C</Typography>
             </MyBox>
 
-            <MyBox>
-              <SiTypescript />
-              <Typography variant='h5'>TS</Typography>
-            </MyBox>
+            
 
             <MyBox>
               <FaGitAlt />
               <Typography variant='h5'>Git</Typography>
             </MyBox>
 
-            <MyBox>
-              <SiCsharp />
-              <Typography variant='h5'>C#</Typography>
-            </MyBox>
+            
             <MyBox>
               <FaPython />
               <Typography variant='h5'>Python</Typography>

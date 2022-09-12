@@ -1,5 +1,5 @@
 
-import { Card, CardMedia, Button } from '@mui/material'
+import { Card, CardMedia } from '@mui/material'
 import React from 'react'
 
 export default function Back(props) {
@@ -15,21 +15,14 @@ export default function Back(props) {
             justifyContent: 'space-between'
         }}>
             <CardMedia
+                sx={{objectFit: "cover"}}
                 component="img"
-                height="75%"
-                mb="10px"
+                backgroundSize="cover"
                 image={photoName === 'photo1' ? photo.photo1 :
                     photoName === 'photo2' ? photo.photo2 :
                         photoName === 'photo3' ? photo.photo3 :
                             photo.photo4}
             />
-            <Button component="span" variant='contained' sx={{
-                bgcolor: 'primary.main',
-                textDecoration: 'underline',
-                marginBottom:'10px'
-            }}>
-                See Detail
-            </Button>
 
         </Card>
     )

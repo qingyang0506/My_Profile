@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material'
 import React from 'react'
 import Card from './Card/Card'
 import photo1 from "../img/kemu.png"
-import photo2 from "../img/funnyquiz.png"
+import photo2 from "../img/DigimonSearch.png"
 import photo3 from "../img/profile.png"
 import photo4 from '../img/tankBattle.png'
 
@@ -55,13 +55,13 @@ export default function Project() {
         }} />
 
         <Card path={{
-          title: 'Funny Quiz',
+          title: 'Digimon Search',
           content: `
-             Use typescript write a very simple webpage you can do the quizzes on. 
-             You can choose the category,the amount and the difficulty of the questions 
-             by yourself. 
+          This is a React Typescript project with a REST API that allows you to search for digimon. 
+          You can search for a digimon by name,or level. What's more, you also can sort them by their name or level. 
+          You can see some names and levels example by clicking the help button in the project
              `,
-          url: ["https://github.com/qingyang0506/Funny-Quiz","https://qingyang0506.github.io/Funny-Quiz/"],
+          url: ["https://github.com/qingyang0506/Digimon_Search_2.0","https://qingyang0506.github.io/Digimon_Search_2.0/"],
           photo: { photo2 },
           photoName: 'photo2'
         }} />
