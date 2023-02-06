@@ -2,79 +2,125 @@ import { Box, Button, Typography } from '@mui/material'
 import React from 'react'
 import { Facebook, Email, GitHub, LinkedIn, DoubleArrow } from '@mui/icons-material'
 import Zoom from 'react-reveal/Zoom';
-import ParticleBackground from './ParticleBackground'
 import '../App.css'
 
 
 export default function Greeting() {
   return (
-
     <Box
       sx={{
         width: '100%',
         height: '100vh',
         display: 'flex',
         justifyContent: 'center',
+        alignItems:'space-around'
       }}
     >
-      <ParticleBackground />
+      
       <Zoom>
         <Box
           sx={{
             display: 'flex',
             flexDirection: 'column',
-            marginTop: '30%',
-            justifyContent: 'space-around',
-            height: { xs: '70%', sm: '40%' },
+            marginTop: '14%',
+            p:"5%",
+            justifyContent: 'space-between',
+            alignItem:"center",
+            height: { xs: '70%', sm: '45%' },
           }}
         >
-          <Box
-            sx={{
-              height: '80px',
-              color: "primary.main",
-              textAlign: 'center',
-              fontSize: { xs: '36px', sm: '52px' },
-              fontWeight: '800',
-              width: '100%',
-              marginBottom: { xs: '18px', sm: '0px' },
-              position: 'relative'
-            }}
-          >
-            Welcome to  my  profile!
-          </Box>
           <Box>
-            <Typography variant='h1' color="black" fontWeight={'1000'} textAlign={'center'}
+            <Typography
+                  variant= "h2"
+                  fontWeight={600}
+                  textAlign="center"
+                  fontSize={"2.8rem"}
+                  sx={{
+                      background: 'linear-gradient(to right, #88d3ce 0%, #6e45e2 100%)',
+                      backgroundClip: "text",
+                      color: "transparent"
+                  }}
+              >
+                  Welcome to  my  profile!
+            </Typography>
+          </Box>
+
+          <Box>
+            <Typography variant='h3' color="black" textAlign={'center'}
               sx={{
-                fontSize: { xs: "20px", sm: '28px' }
+                fontSize: { xs: "1.3em", sm: '1.7em' }
               }}
             >
               <span className="Name">Hi! I'm QingYang Li</span>
             </Typography>
           </Box>
-
+        
           <Box
             sx={{
               display: 'flex',
               flexDirection: { xs: 'column', sm: 'row' },
               justifyContent: 'space-between',
-              gap: 2,
-              marginTop: '10px'
+              alignItems:'center',
+              gap: 2.5,
             }}
           >
-            <Button variant='contained' size='large' startIcon={<Facebook />} href="https://www.facebook.com/profile.php?id=100040586693552" target="_blank">
+            <Button 
+               variant='contained' 
+               size='large' startIcon={<Facebook />} 
+               href="https://www.facebook.com/profile.php?id=100040586693552" 
+               target="_blank"
+               sx={{
+                  textAlign:'center',
+                  width:{xs:'50vw',sm:'13vw'}
+               }}
+            >
               FaceBook
-              {/* <Facebook/> */}
             </Button>
-            <Button variant='contained' size='large' startIcon={<Email />} href="mailto:1565134797qq@gmail.com" target="_blank">
+            <Button 
+              variant='contained' 
+              size='large' 
+              startIcon={<Email />} 
+              href="mailto:1565134797qq@gmail.com" 
+              target="_blank"
+              
+              sx={{
+                 textAlign:'center',
+                 width:{xs:'50vw',sm:'13vw'}
+              }}
+              >
               Email
             </Button>
-            <Button variant='contained' size='large' startIcon={<GitHub />} href="https://github.com/qingyang0506?tab=repositories" target="_blank">
+            <Button 
+              variant='contained'
+              size='large' 
+              startIcon={<GitHub />} 
+              href="https://github.com/qingyang0506?tab=repositories" 
+              target="_blank"
+              
+              sx={{
+                textAlign:'center',
+                width:{xs:'50vw',sm:'13vw'}
+              }}
+              >
               GitHub
             </Button>
-            <Button variant='contained' size='large' startIcon={<LinkedIn />} href="https://www.linkedin.com/in/qingyang-li-372899209/" target="_blank">
+            <Button 
+              variant='contained' 
+              size='large' 
+              startIcon={<LinkedIn />} 
+              href="https://www.linkedin.com/in/qingyang-li-372899209/" 
+              target="_blank"
+              
+              sx={{
+                textAlign:'center',
+                width:{xs:'50vw',sm:'13vw'}
+              }}
+              >
               LinkedIn
             </Button>
           </Box>
+
+
           <DoubleArrow sx={{
             transform: 'rotate(90deg)',
             fontSize: '45px',

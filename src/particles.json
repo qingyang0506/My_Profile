@@ -4,16 +4,16 @@
       "value": "#fff"
     }
   },
-  "fullScreen":{
-    "IFullScreen":false,
-    "zIndex":-1
+  "fullScreen": {
+    "IFullScreen": false,
+    "zIndex": -1
   },
-  "fpsLimit": 120,
+  "fpsLimit": 140,
   "interactivity": {
     "events": {
-      "onClick":{
-        "enable":true,
-        "mode":"push"
+      "onClick": {
+        "enable": true,
+        "mode": "push"
       },
       "onHover": {
         "enable": true,
@@ -31,17 +31,17 @@
       "push": {
         "quantity": 2
       },
-      "remove":{
-         "quantity":1
+      "remove": {
+        "quantity": 1
       },
       "repulse": {
         "distance": 200,
         "duration": 0.5
       },
-      "trail":{
-        "delay":0.5,
-        "quantity":1,
-        "pauseOnStop":true
+      "trail": {
+        "delay": 0.5,
+        "quantity": 1,
+        "pauseOnStop": false
       }
     }
   },

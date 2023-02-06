@@ -84,7 +84,6 @@ export default function Skill() {
               <Typography variant='h6' textAlign={'center'}>
                 My technical skills, Ordered by proficiency
               </Typography>
-
             </Box>
           </Fade>
 

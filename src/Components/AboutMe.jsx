@@ -1,9 +1,10 @@
 import { Box, Avatar, Typography } from '@mui/material'
 import React from 'react'
 import photo from '../img/avatar.jpeg'
-import { DoubleArrow, EmojiEvents } from '@mui/icons-material'
+import { DoubleArrow} from '@mui/icons-material'
+import { AchievementItem } from './AchievementItem'
 import Fade from 'react-reveal/Fade';
-
+import aboutme from "../Data/aboutme.json"
 
 export default function AboutMe() {
   return (
@@ -51,10 +52,7 @@ export default function AboutMe() {
               fontSize: '18px',
               fontWeight: '500'
             }}>
-              A third-year student specializing in software engineering at the University of Auckland.
-              Great interest in software development, data analysis and graphic design.
-              I am a hardworking and motivated person who has developed a mature
-              and responsible approach to any task that I undertake.
+               {aboutme.description}
             </Typography>
           </Fade>
 
@@ -91,76 +89,26 @@ export default function AboutMe() {
 
         <Box sx={{
           width: '80%',
-          height: '60%',
+          height: '75%',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-around'
         }}>
 
           <Fade right>
-            <Typography variant='h4' color={'white'} fontSize="40px" fontWeight={800}>
+            <Typography 
+              variant='h3' 
+              color={'white'} 
+              fontSize="2em" 
+              fontWeight={600}
+              >
               Achievement
             </Typography>
-
-            <Box gap={3} sx={{
-              display: 'flex',
-              justifyContent: 'flex-start',
-              alignItems: 'center'
-            }}
-            >
-              <EmojiEvents sx={{
-                color: 'yellow',
-                fontSize: '30px'
-              }} />
-              <Typography fontSize={'18px'} color="white" fontWeight={600}>
-                The first-place scholarships with $5000 in UP Foundation Education,2020
-              </Typography>
-            </Box>
-
-            <Box gap={3} sx={{
-              display: 'flex',
-              justifyContent: 'flex-start',
-              alignItems: 'center'
-            }}
-            >
-              <EmojiEvents sx={{
-                color: 'yellow',
-                fontSize: '30px'
-              }} />
-              <Typography fontSize={'18px'} color="white" fontWeight={600}>
-                First-in-course Awards in ENGSCI 111,2021
-              </Typography>
-            </Box>
-
-            <Box gap={3} sx={{
-              display: 'flex',
-              justifyContent: 'flex-start',
-              alignItems: 'center'
-            }}
-            >
-              <EmojiEvents sx={{
-                color: 'yellow',
-                fontSize: '30px'
-              }} />
-              <Typography fontSize={'18px'} color="white" fontWeight={600}>
-                New Zealand Programming Contest, 2021 – First place
-              </Typography>
-            </Box>
-
-            <Box gap={3} sx={{
-              display: 'flex',
-              justifyContent: 'flex-start',
-              alignItems: 'center'
-            }}
-            >
-              <EmojiEvents sx={{
-                color: 'yellow',
-                fontSize: '30px'
-              }} />
-              <Typography fontSize={'18px'} color="white" fontWeight={600}>
-                Southern Pacific Programming Contest Honourable Mention,2021
-              </Typography>
-            </Box>
+            {
+              aboutme.achievements.map( text => (
+                  <AchievementItem text={text}/>
+              ))
+            }
           </Fade>
         </Box>
       </Box>
