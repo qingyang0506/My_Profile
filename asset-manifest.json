@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/My_Profile/static/css/main.20f41773.css",
-    "main.js": "/My_Profile/static/js/main.a06e8a54.js",
-    "static/media/DigimonSearch.png": "/My_Profile/static/media/DigimonSearch.ddc34bb802f2655c2532.png",
+    "main.css": "/My_Profile/static/css/main.6f168900.css",
+    "main.js": "/My_Profile/static/js/main.b92a18bc.js",
+    "static/media/processor8.png": "/My_Profile/static/media/processor8.93e40a9b2aea8a1a7533.png",
+    "static/media/DigimonSearch.png": "/My_Profile/static/media/DigimonSearch.89ca8ee2834971d8efca.png",
     "static/media/kemu.png": "/My_Profile/static/media/kemu.2345391b47efd717dc8d.png",
-    "static/media/profile.png": "/My_Profile/static/media/profile.b5558c5e50d4a5f6bea1.png",
-    "static/media/tankBattle.png": "/My_Profile/static/media/tankBattle.57ad98b333ccf23bd365.png",
+    "static/media/lego.png": "/My_Profile/static/media/lego.198cbca21b6122d97cd1.png",
+    "static/media/tankBattle.png": "/My_Profile/static/media/tankBattle.ef77d13c8d359b2d1f5d.png",
+    "static/media/profile.png": "/My_Profile/static/media/profile.f492d4d3a91514937522.png",
     "static/media/avatar.jpeg": "/My_Profile/static/media/avatar.5cbc89b81d8669396185.jpeg",
     "index.html": "/My_Profile/index.html",
-    "main.20f41773.css.map": "/My_Profile/static/css/main.20f41773.css.map",
-    "main.a06e8a54.js.map": "/My_Profile/static/js/main.a06e8a54.js.map"
+    "main.6f168900.css.map": "/My_Profile/static/css/main.6f168900.css.map",
+    "main.b92a18bc.js.map": "/My_Profile/static/js/main.b92a18bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.20f41773.css",
-    "static/js/main.a06e8a54.js"
+    "static/css/main.6f168900.css",
+    "static/js/main.b92a18bc.js"
   ]
 }
