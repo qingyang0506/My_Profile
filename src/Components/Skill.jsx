@@ -1,39 +1,16 @@
-import { Box, Typography, styled } from '@mui/material'
+import { Box, Typography, styled ,Grid} from '@mui/material'
 import React from 'react'
 import { DoubleArrow } from '@mui/icons-material'
-import { FaJava, FaGitAlt, FaPython } from 'react-icons/fa'
-import { SiCplusplus, SiReact, SiC, SiTypescript, SiCsharp, SiGnubash } from 'react-icons/si'
-import { TbBrandJavascript, TbBrandHtml5, TbBrandCss3 } from 'react-icons/tb'
 import Fade from 'react-reveal/Fade';
+import skill from "../Data/skill.json"
+import { SkillCard } from './SkillCard';
 
 export default function Skill() {
-
-  const MyBox = styled(Box)(({ theme }) => ({
-    width: '14%',
-    height: '14%',
-    padding: '8px',
-    gap: '2px',
-    backgroundColor: theme.palette.primary.dark,
-    fontSize: '60px',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#eee',
-    transition: '0.4s all',
-    boxShadow: '0px 0px 5px rgba(0,0,0,0.3)',
-    '&:hover': {
-      backgroundColor: '#eee',
-      color: theme.palette.primary.dark,
-      transform: 'translateY(-8px)'
-    }
-  }))
-
   return (
     <Box id='skill'
       sx={{
         width: '100%',
-        height: { xs: '200vh', sm: '100vh' },
+        // height: { xs: '200vh', sm: '100vh' },
         display: 'flex',
         flexDirection: { xs: 'column', sm: 'row' }
       }}
@@ -110,7 +87,7 @@ export default function Skill() {
       </Box>
 
       <Box sx={{
-        height: '100vh',
+        // height: '100vh',
         width: { xs: "100%", sm: '55%' },
         bgcolor: 'white',
         display: 'flex',
@@ -119,81 +96,16 @@ export default function Skill() {
       }}
       >
         <Fade bottom>
-          <Box gap={7}
-            sx={{
-              height: '80%',
-              width: "80%",
-              display: 'flex',
-              flexWrap: 'wrap',
-              justifyContent: 'space-evenly',
-              alignContent: 'space-evenly',
-              marginLeft: '10%'
-            }}
-          >
-            <MyBox>
-              <FaJava />
-              <Typography variant='h5'>Java</Typography>
-            </MyBox>
-
-            <MyBox>
-              <SiCplusplus />
-              <Typography variant='h5'>C++</Typography>
-            </MyBox>
-
-            <MyBox>
-              <SiReact />
-              <Typography variant='h5'>React</Typography>
-            </MyBox>
-
-            <MyBox>
-              <SiTypescript />
-              <Typography variant='h5'>TS</Typography>
-            </MyBox>
-
-            <MyBox>
-              <SiCsharp />
-              <Typography variant='h5'>C#</Typography>
-            </MyBox>
-
-            <MyBox>
-              <TbBrandJavascript />
-              <Typography variant='h5'>JS</Typography>
-            </MyBox>
-
-            <MyBox>
-              <TbBrandHtml5 />
-              <Typography variant='h5'>HTML</Typography>
-            </MyBox>
-
-            <MyBox>
-              <TbBrandCss3 />
-              <Typography variant='h5'>CSS</Typography>
-            </MyBox>
-
-          
-
-            <MyBox>
-              <SiC />
-              <Typography variant='h5'>C</Typography>
-            </MyBox>
-
-            
-
-            <MyBox>
-              <FaGitAlt />
-              <Typography variant='h5'>Git</Typography>
-            </MyBox>
-
-            
-            <MyBox>
-              <FaPython />
-              <Typography variant='h5'>Python</Typography>
-            </MyBox>
-            <MyBox>
-              <SiGnubash />
-              <Typography variant='h5'>Bash</Typography>
-            </MyBox>
-          </Box>
+            <Grid 
+              container 
+              padding={6}
+            >
+               {skill.skills.map( (text,index) => (
+                   <Grid item xs={6} sm={4} key={index}>
+                      <SkillCard text={text}/>
+                   </Grid>
+               ))}
+            </Grid>
         </Fade>
       </Box>
     </Box>

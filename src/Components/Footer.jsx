@@ -5,28 +5,34 @@ import { SiReact } from 'react-icons/si'
 import { TbBrandCss3 } from 'react-icons/tb'
 
 export default function Footer() {
+
+  const iconStyle = {
+    fontSize: '1.4em',
+    color: 'primary.main'
+  }
   return (
     <Box
       sx={{
-        display:{xs:'none',sm:'flex'},
+        display:'flex',
         width: '100%',
-        height: '10vh',
+        // height: {xs:"20vh",sm:'10vh'},
         bgcolor: '#eee',
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
+        padding:0.5
       }}
     >
       <Box
         sx={{
-          height: '80%',
-          width: '35%',
+          // height: '80%',
+          width: {xs:"100%",sm:'35%'},
           display: 'flex',
           justifyContent: 'center'
         }}
       >
         <Box
           sx={{
-            height: '100%',
+            // height: '100%',
             width: '85%',
             display: 'flex',
             justifyContent: 'space-around',
@@ -34,31 +40,19 @@ export default function Footer() {
           }}
         >
           <IconButton href="https://www.facebook.com/profile.php?id=100040586693552" target="_blank">
-            <Facebook sx={{
-              fontSize: '35px',
-              color: 'primary.main'
-            }} />
+            <Facebook sx={iconStyle} />
           </IconButton>
 
           <IconButton href="mailto:1565134797qq@gmail.com" target="_blank">
-            <Email sx={{
-              fontSize: '35px',
-              color: 'primary.main'
-            }} />
+            <Email sx={iconStyle} />
           </IconButton>
 
           <IconButton href="https://github.com/qingyang0506?tab=repositories" target="_blank">
-            <GitHub sx={{
-              fontSize: '35px',
-              color: 'primary.main'
-            }} />
+            <GitHub sx={iconStyle} />
           </IconButton>
 
           <IconButton href="https://www.linkedin.com/in/qingyang-li-372899209/" target="_blank">
-            <LinkedIn sx={{
-              fontSize: '35px',
-              color: 'primary.main'
-            }} />
+            <LinkedIn sx={iconStyle} />
           </IconButton>
         </Box>
       </Box>
@@ -66,20 +60,20 @@ export default function Footer() {
         sx={{
           height: '80%',
           width: '25%',
-          display: 'flex',
+          display: {xs:"none",sm:"flex"},
           alignItems: 'center',
           justifyContent: 'center'
         }}
       >
         <Typography sx={{
-          fontSize: "18px",
+          fontSize: "1.1em",
           color: 'primary.main'
         }}>
           Made using
         </Typography>
         <Box sx={{
-          marginLeft: '10px',
-          fontSize: '25px',
+          marginLeft: '1em',
+          fontSize: '1.3em',
           color: 'primary.main',
           display: 'flex',
         }}>

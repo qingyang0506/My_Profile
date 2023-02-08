@@ -4,18 +4,18 @@ import { GitHub } from '@mui/icons-material'
 
 export default function Front(props) {
 
-    const { pass: { title, content,url:{url}} } = props;
+    const { pass: { title, content,url:{url},styles:{style}} } = props;
 
     return (
         <Card sx={{
-            width: { xs: '78vw', sm: '32vw' },
-            height: { xs: '30vh', sm: '38vh' },
+            ...style,
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-evenly',
+            // padding:2
         }}>
             <Box sx={{
-                marginLeft: '2vh',
+                // marginLeft: '2vh',
             }}>
                 <Typography variant='h5'>
                     {title.title}
@@ -31,12 +31,12 @@ export default function Front(props) {
             </CardContent>
             <Box
                 sx={{
-                    marginLeft: '2vh',
-                    marginBottom: '2vh'
+                    // marginLeft: '2vh',
+                    // marginBottom: '2vh'
                 }}
             >
                 <IconButton href={url[0]} target="_blank" size={'large'} sx={{
-                    marginRight: '2vh'
+                    // marginRight: '2vh'
                 }}>
                     <GitHub />
                 </IconButton>

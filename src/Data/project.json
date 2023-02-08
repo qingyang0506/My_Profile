@@ -1,0 +1,59 @@
+{
+    "projects": [
+        {
+            "title": "Kemu-Kupu",
+            "content": "Kēmu Kupu is a javaFX application that tests the user on spelling Maori words from a GUI.This software project aims to help children aged 8-15 learn more about Maori words and their spelling.",
+            "url": [
+                "https://github.com/qingyang0506/Kemu-Kupu",
+                "https://github.com/qingyang0506/Kemu-Kupu"
+            ],
+            "photoName": "kemu"
+        },
+        {
+            "title": "Digimon Search",
+            "content": "This is a React Typescript project with a REST API that allows you to search for digimon. You can search for a digimon by name,or level. What's more, you also can sort them by their name or level. You can see some names and levels example by clicking the help button in the project",
+            "url": [
+                "https://github.com/qingyang0506/Digimon_Search_2.0",
+                "https://qingyang0506.github.io/Digimon_Search_2.0/"
+            ],
+            "photoName": "DigimonSearch"
+        },
+        {
+            "title": "My profile page",
+            "content": "My personal profile web page.Developed with reactJS and material Ui,hosted by Github",
+            "url": [
+                "https://github.com/qingyang0506/My_Profile",
+                "https://qingyang0506.github.io/My_Profile/"
+            ],
+            "photoName": "profile"
+        },
+        {
+            "title": "Lego Shop",
+            "content": "This is an android project which sold legos. And it is developed by Java, the database used NoSql firestore database",
+            "url": [
+                "https://github.com/qingyang0506/LegoShop",
+                "https://github.com/qingyang0506/LegoShop"
+            ],
+            "photoName": "lego"
+        },
+        {
+            "title": "Tank Battle",
+            "content": "Using C# and winform develop a tradition and simple game 'battle city'.This game only run on window system and microsoft visual studio software.",
+            "url": [
+                "https://github.com/qingyang0506/TankBattle",
+                "https://github.com/qingyang0506/TankBattle"
+            ],
+            "photoName": "tankBattle"
+        },
+        {
+            "title": "Processor 8",
+            "content": "Multithreaded A* algorithm implementation that solves the NP-Hard Task Scheduling problem with algorithm visualiser.Using Java,JavaFx and A* algorithm",
+            "url": [
+                "https://github.com/qingyang0506/Processor-8",
+                "https://github.com/qingyang0506/Processor-8"
+            ],
+            "photoName": "processor8"
+        }
+        
+    ]
+}

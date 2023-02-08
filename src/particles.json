@@ -8,7 +8,7 @@
     "IFullScreen": false,
     "zIndex": -1
   },
-  "fpsLimit": 140,
+  "fpsLimit": 120,
   "interactivity": {
     "events": {
       "onClick": {

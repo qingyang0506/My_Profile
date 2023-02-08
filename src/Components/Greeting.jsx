@@ -5,6 +5,11 @@ import Zoom from 'react-reveal/Zoom';
 import '../App.css'
 
 
+const buttonStyle = {
+    textAlign:'center',
+    width:{xs:'17em',sm:'12em'}
+}
+
 export default function Greeting() {
   return (
     <Box
@@ -69,10 +74,7 @@ export default function Greeting() {
                size='large' startIcon={<Facebook />} 
                href="https://www.facebook.com/profile.php?id=100040586693552" 
                target="_blank"
-               sx={{
-                  textAlign:'center',
-                  width:{xs:'50vw',sm:'13vw'}
-               }}
+               sx={buttonStyle}
             >
               FaceBook
             </Button>
@@ -82,11 +84,7 @@ export default function Greeting() {
               startIcon={<Email />} 
               href="mailto:1565134797qq@gmail.com" 
               target="_blank"
-              
-              sx={{
-                 textAlign:'center',
-                 width:{xs:'50vw',sm:'13vw'}
-              }}
+              sx={buttonStyle}
               >
               Email
             </Button>
@@ -96,11 +94,7 @@ export default function Greeting() {
               startIcon={<GitHub />} 
               href="https://github.com/qingyang0506?tab=repositories" 
               target="_blank"
-              
-              sx={{
-                textAlign:'center',
-                width:{xs:'50vw',sm:'13vw'}
-              }}
+              sx={buttonStyle}
               >
               GitHub
             </Button>
@@ -110,11 +104,7 @@ export default function Greeting() {
               startIcon={<LinkedIn />} 
               href="https://www.linkedin.com/in/qingyang-li-372899209/" 
               target="_blank"
-              
-              sx={{
-                textAlign:'center',
-                width:{xs:'50vw',sm:'13vw'}
-              }}
+              sx={buttonStyle}
               >
               LinkedIn
             </Button>

@@ -1,29 +1,51 @@
 
-import { Card, CardMedia } from '@mui/material'
+import { Card, CardMedia, Typography,Button } from '@mui/material'
 import React from 'react'
+import kemu from "../../img/kemu.png"
+import DigimonSearch from "../../img/DigimonSearch.png"
+import profile from "../../img/profile.png"
+import tankBattle from '../../img/tankBattle.png'
 
-export default function Back(props) {
-    const { pass: { photo: { photo }, photoName: { photoName } } } = props
+const imgTable = (name) =>{
+    if(name === "kemu"){
+        return kemu
+    }else if(name === "DigimonSearch"){
+        return DigimonSearch
+    }else if(name === "profile"){
+        return profile
+    }else if(name === "tankBattle"){
+        return tankBattle
+    }
+}
+
+export default function Back({pass:{photoName,styles:{style}}}) {
 
     return (
         <Card sx={{
-            width: { xs: '78vw', sm: '32vw' },
-            height: { xs: '30vh', sm: '38vh' },
+            ...style,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            justifyContent: 'space-between'
+            justifyContent: 'space-between',
+            // padding:2
         }}>
-            <CardMedia
-                sx={{objectFit: "cover"}}
-                component="img"
-                backgroundSize="cover"
-                image={photoName === 'photo1' ? photo.photo1 :
-                    photoName === 'photo2' ? photo.photo2 :
-                        photoName === 'photo3' ? photo.photo3 :
-                            photo.photo4}
-            />
 
+            <Typography >
+                Kume Kupa
+            </Typography>
+            <CardMedia
+                sx={{
+                    objectFit: "cover",
+                    height:"80%",
+                    width:"100%"
+                }}
+                component="img"
+                // backgroundSize="cover"
+                image={imgTable(photoName.photoName)}
+            />
+            <Button>
+                Click
+            </Button>
         </Card>
     )
 }

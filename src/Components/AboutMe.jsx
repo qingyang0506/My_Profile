@@ -10,7 +10,6 @@ export default function AboutMe() {
   return (
     <Box id="aboutme"
       sx={{
-        height: { xs: '200vh', sm: '100vh' },
         width: '100%',
         display: 'flex',
         flexWrap: 'wrap'
@@ -19,13 +18,11 @@ export default function AboutMe() {
 
       <Box
         sx={{
-          height: { xs: '100vh', sm: '100%' },
           width: { xs: '100%', sm: "45%" },
           bgcolor: 'primary.dark',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          position: 'relative'
         }}
       >
         <Box
@@ -33,57 +30,50 @@ export default function AboutMe() {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            height: '70%',
-            width: '80%',
-            justifyContent: 'space-between'
+            justifyContent: 'space-between',
+            padding:5,
+            gap:5
           }}
         >
           <Fade left>
             <Avatar src={photo} sx={{
-              width: '250px',
-              height: '250px',
-              marginBottom:"30px"
+              width: '11em',
+              height: '11em',
             }} />
 
             <Typography variant={'h6'} sx={{
-              marginBottom: '10vh',
               textAlign: 'center',
               color: 'white',
-              fontSize: '18px',
+              fontSize: '1.2em',
               fontWeight: '500'
             }}>
                {aboutme.description}
             </Typography>
-          </Fade>
-
-          <DoubleArrow sx={{
-            transform: 'rotate(90deg)',
-            fontSize: '45px',
-            color: 'white',
-            alignSelf: 'center',
-            position: 'absolute',
-            bottom: '30px',
-            '&:hover': {
-              cursor: 'pointer'
-            }
-          }}
+            <DoubleArrow sx={{
+              transform: 'rotate(90deg)',
+              fontSize: '3em',
+              color: 'white',
+              alignSelf: 'center',
+              '&:hover': {
+                cursor: 'pointer'
+              }
+            }}
             onClick={() => {
               let anchorElement = document.getElementById("skill")
               if (anchorElement) {
                 anchorElement.scrollIntoView({ behavior: 'smooth' })
               }
             }} />
-
+          </Fade>
         </Box>
       </Box>
       <Box
         sx={{
-          height: { xs: '100vh', sm: '100%' },
           width: { xs: '100%', sm: "55%" },
           bgcolor: 'primary.main',
           display: 'flex',
           justifyContent: 'center',
-          alignItems: 'center'
+          alignItems: 'center',
         }}
       >
 
@@ -92,7 +82,8 @@ export default function AboutMe() {
           height: '75%',
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'space-around'
+          justifyContent: 'space-around',
+          padding:4
         }}>
 
           <Fade right>
