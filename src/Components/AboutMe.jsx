@@ -18,6 +18,7 @@ export default function AboutMe() {
 
       <Box
         sx={{
+         
           width: { xs: '100%', sm: "45%" },
           bgcolor: 'primary.dark',
           display: 'flex',
@@ -69,6 +70,7 @@ export default function AboutMe() {
       </Box>
       <Box
         sx={{
+          height:"100vh",
           width: { xs: '100%', sm: "55%" },
           bgcolor: 'primary.main',
           display: 'flex',
