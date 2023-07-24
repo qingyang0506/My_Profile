@@ -1,20 +1,22 @@
 {
   "files": {
     "main.css": "/My_Profile/static/css/main.6f168900.css",
-    "main.js": "/My_Profile/static/js/main.0b262540.js",
+    "main.js": "/My_Profile/static/js/main.9f093b0a.js",
     "static/media/processor8.png": "/My_Profile/static/media/processor8.93e40a9b2aea8a1a7533.png",
+    "static/media/virtual_study_room.png": "/My_Profile/static/media/virtual_study_room.57de482b254c27ed54e2.png",
     "static/media/DigimonSearch.png": "/My_Profile/static/media/DigimonSearch.89ca8ee2834971d8efca.png",
     "static/media/kemu.png": "/My_Profile/static/media/kemu.2345391b47efd717dc8d.png",
     "static/media/lego.png": "/My_Profile/static/media/lego.198cbca21b6122d97cd1.png",
+    "static/media/covid-19.png": "/My_Profile/static/media/covid-19.acf88e20001372e45f97.png",
     "static/media/tankBattle.png": "/My_Profile/static/media/tankBattle.ef77d13c8d359b2d1f5d.png",
     "static/media/profile.png": "/My_Profile/static/media/profile.f492d4d3a91514937522.png",
     "static/media/avatar.jpeg": "/My_Profile/static/media/avatar.5cbc89b81d8669396185.jpeg",
     "index.html": "/My_Profile/index.html",
     "main.6f168900.css.map": "/My_Profile/static/css/main.6f168900.css.map",
-    "main.0b262540.js.map": "/My_Profile/static/js/main.0b262540.js.map"
+    "main.9f093b0a.js.map": "/My_Profile/static/js/main.9f093b0a.js.map"
   },
   "entrypoints": [
     "static/css/main.6f168900.css",
-    "static/js/main.0b262540.js"
+    "static/js/main.9f093b0a.js"
   ]
 }
