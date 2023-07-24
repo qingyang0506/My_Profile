@@ -22,7 +22,7 @@ export default function Greeting() {
       }}
     >
       
-      <Zoom>
+      <Box>
         <Box
           sx={{
             display: 'flex',
@@ -129,7 +129,7 @@ export default function Greeting() {
               }
             }} />
         </Box>
-      </Zoom>
+      </Box>
     </Box>
   )
 }

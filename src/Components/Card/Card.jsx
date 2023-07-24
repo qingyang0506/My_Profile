@@ -6,6 +6,8 @@ import profile from "../../img/profile.png"
 import tankBattle from '../../img/tankBattle.png'
 import lego from "../../img/lego.png"
 import processor8 from "../../img/processor8.png"
+import virtualStudyRoom from "../../img/virtual_study_room.png"
+import Covid19 from "../../img/covid-19.png"
 import { GitHub } from '@mui/icons-material'
 
 const imgTable = (name) =>{
@@ -21,6 +23,10 @@ const imgTable = (name) =>{
         return lego
     }else if(name ==="processor8"){
         return processor8
+    }else if(name === "virtual_study_room"){
+        return virtualStudyRoom
+    }else if(name === "covid-19"){
+        return Covid19;
     }
 }
 

@@ -3,7 +3,6 @@ import React from 'react'
 import Fade from 'react-reveal/Fade';
 import Card from './Card/Card'
 import project from "../Data/project.json"
-import Skill from './Skill';
 
 export default function Project() {
   return (

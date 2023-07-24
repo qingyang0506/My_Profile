@@ -53,7 +53,24 @@
                 "https://github.com/qingyang0506/Processor-8"
             ],
             "photoName": "processor8"
+        },
+        {
+            "title": "Covid-19-Analyzer",
+            "content": "This is a data visualization project which is analysis the covid-19 data all around the world. This is web application which is built by the react with Typescript. No backend or database tech stack, all the data in this app are fetched from the third party API.",
+            "url": [
+                "https://github.com/qingyang0506/Covid-19-Analyzer",
+                "https://qingyang0506.github.io/Covid-19-Analyzer/"
+            ],
+            "photoName": "covid-19"
+        },
+        {
+            "title": "Study Virtual Room",
+            "content": "This is a full stack project which is an online virtual study room to help student study with relaxing background music, written by MERN Stack.",
+            "url": [
+                "https://github.com/qingyang0506/Virtual_Study_Room",
+                "https://github.com/qingyang0506/Virtual_Study_Room"
+            ],
+            "photoName": "virtual_study_room"
         }
-        
     ]
 }
